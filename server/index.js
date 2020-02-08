@@ -9,7 +9,7 @@ const app = express();
     res.send({ hi: 'there' }): immediately send some JSON back to who made this request
  */
 app.get('/', (req, res) => {
-    res.send({ hi: 'there' }, { hi: 'there' });
+    res.send({ bye: 'there' });
 });
 
 const PORT = process.env.PORT || 5000;
